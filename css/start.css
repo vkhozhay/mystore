@@ -1,0 +1,214 @@
+.banners__container {
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    height: 385px;
+}
+
+.banners__left-banner-link,
+.banners__right-banner-link {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+
+.banners__left-banner {
+    background-image: url('../img/start-page/left-banner.png');
+    background-position: center;
+
+}
+
+.banners__right-banner {
+    background: url('../img/start-page/right-banner.png'), #f7f7f7;
+    background-position: 40px -70px;
+
+}
+
+.banners__left-banner-link:hover .banners__left-banner,
+.banners__right-banner-link:hover .banners__right-banner {
+    transform: scale(1.05);
+}
+
+.banners__left-banner,
+.banners__right-banner {
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+.banners__banner-discription {
+    position: absolute;
+    top: 65px;
+    right: 100px;
+}
+
+.banners__banner-title {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.banners__banner-subtitle {
+    margin: 0;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #757575;
+    text-align: center;
+}
+
+.section_line_available {
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.section_line_available::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    margin-top: -1px;
+    width: 100vw;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(229, 229, 229, 0) 2%, rgba(229, 229, 229, 1) 7%, rgba(229, 229, 229, 1) 50%, rgba(229, 229, 229, 1) 93%, rgba(229, 229, 229, 0) 98%);
+
+}
+
+
+
+/* ******************BEST OFFER*********************** */
+
+.best-offer__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.best-offer__title {
+    margin-bottom: 30px;
+}
+
+.best-offer__subtitle {
+    margin-bottom: 70px;
+}
+
+.best-offer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best-offer__first-item,
+.best-offer__second-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-offer__first-item-button-up,
+.best-offer__second-item-button-up,
+.best-offer__first-item-button-down,
+.best-offer__second-item-button-down {
+    width: 24px;
+    height: 14px;
+    background-image: url('../img/icons/arrow-up.png');
+    cursor: pointer;
+}
+
+.best-offer__first-item-button-up,
+.best-offer__second-item-button-up {
+    margin-bottom: 40px;
+}
+
+.best-offer__first-item-button-down,
+.best-offer__second-item-button-down {
+    margin-top: 40px;
+    transform: rotate(180deg);
+}
+
+.best-offer__plus,
+.best-offer__equally {
+    position: relative;
+    top: -50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.best-offer__result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-offer__old-price {
+    position: relative;
+    left: -60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.best-offer__old-price::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #f14a58;
+    transform: rotate(-30deg);
+}
+
+.best-offer__new-price {
+    margin-top: 25px;
+    margin-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.best-offer__add-to-bag-button,
+.new-arrivals__all-arrivals-button {
+    padding: 25px 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-property: color, border;
+}
+
+.best-offer__add-to-bag-button:hover,
+.new-arrivals__all-arrivals-button:hover {
+    color: #f14a58;
+    border-color: #f14a58;
+}
+
+
+/* *******************NEW ARRIVALS********************** */
+
+.new-arrivals__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.new-arrivals__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
