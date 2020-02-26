@@ -13,18 +13,23 @@
     <header class="header">
         <div class="container header__container">
             <a href="start.html" class="header__logo">Template</a>
+            <a href="start.html" class="header__logo_mobile">TL</a>
             <div class="header__buttons">
                 <a href="#" class="header__sing-up">E-mail sing up</a>
                 <a href="#" class="header__bag">
                     <img src="img/icons/bag-icon.png" alt="bag icon" class="header__bag-icon" width="12" height="12">
                     <div class="header__bag-title">Bag (0)</div>
                 </a>
+                <!-- header__mobile-menu-button_active -->
+                <div class="header__mobile-menu-button "></div>
             </div>
         </div>
     </header>
 
-    <nav class="navigation">
-        <div class="container navigation__container">
+    <!-- navigation_mobile_active -->
+    <nav class="navigation section_line_available ">
+        <!-- navigation__container_mobile_active -->
+        <div class="container navigation__container ">
             <ul class="navigation__list">
                 <li><a href="#" class="navigation__list-item">Women</a></li>
                 <li><a href="#" class="navigation__list-item">Men</a></li>
@@ -35,8 +40,11 @@
                 <li><a href="#" class="navigation__list-item">Clearance</a></li>
                 <li><a href="#" class="navigation__list-item">Store Locator</a></li>
             </ul>
-            <div class="navigation__search">
-                <input type="text" placeholder="Style Name" class="navigation__search-input">
+            <div class="navigation__search ">
+                <!--navigation__search_mobile_active-->
+                <input type="text" placeholder="Style Name" class="navigation__search-input ">
+                <!--navigation__search-input_mobile_active-->
+                <div class="navigation__search-icon"></div>
             </div>
         </div>
     </nav>
@@ -89,10 +97,13 @@
                 <div class="best-offer__equally">=</div>
                 <div class="best-offer__result">
                     <div class="best-offer__old-price">£161.00</div>
-                    <div class="best-offer__new-price">£146.00</div>
-                    <div class="best-offer__add-to-bag-button">Add to bag</div>
+                    <div class="best-offer__new-price">
+                        <div class="best-offer__equally best-offer__equally_mobile">=</div>£146.00
+                    </div>
+                    <div class="best-offer__add-to-bag-button best-offer__add-to-bag-button_desktop">Add to bag</div>
                 </div>
             </div>
+            <div class="best-offer__add-to-bag-button best-offer__add-to-bag-button_mobile">Add to bag</div>
         </div>
     </section>
 
@@ -170,6 +181,13 @@
                 <div class="links__delivery-info-and-socials">
                     <div class="links__delivery-info">We have our own delivery service which operates in 23 major
                         European cities. Delivery time - 3-5 days.</div>
+                    <div class="footer__links_mobile">
+                        <ul class="footer__links-list">
+                            <li><a href="#" class="footer__list-item">Legal notice</a></li>
+                            <li><a href="#" class="footer__list-item">Privacy policy</a></li>
+                            <li><a href="#" class="footer__list-item">Site map</a></li>
+                        </ul>
+                    </div>
                     <div class="links__socials">
                         <a href="#" class="links__socials-fb"><img src="img/icons/fb.svg" alt="facebook icon"></a>
                         <a href="#" class="links__socials-twitter"><img src="img/icons/twitter-2.svg"
@@ -196,6 +214,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let menu = document.querySelector('.header__mobile-menu-button');
+        let navContainer = document.querySelector('.navigation__container');
+        let navBlock = document.querySelector('.navigation');
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('header__mobile-menu-button_active');
+            navContainer.classList.toggle('navigation__container_mobile_active');
+            navBlock.classList.toggle('navigation_mobile_active');
+        })
+    </script>
 </body>
 
 </html>

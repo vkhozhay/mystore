@@ -5,6 +5,17 @@
     height: 385px;
 }
 
+.banners__container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #e5e5e5;
+    z-index: 9999;
+}
+
 .banners__left-banner-link,
 .banners__right-banner-link {
     overflow: hidden;
@@ -13,10 +24,6 @@
     color: #000000;
     text-decoration: none;
 }
-
-
-
-
 
 .banners__left-banner {
     background-image: url('../img/start-page/left-banner.png');
@@ -67,23 +74,42 @@
     text-align: center;
 }
 
-.section_line_available {
-    position: relative;
-    padding-bottom: 1px;
+@media (max-width: 1024px) {
+    .banners__container {
+        height: 230px;
+        padding: 0;
+    }
+
+    .banners__left-banner {
+        background-size: contain;
+    }
+
+    .banners__right-banner {
+        background-size: 65%;
+        background-position: 30px -60px;
+    }
+
+    .banners__banner-discription {
+        top: 35px;
+        right: 50px;
+    }
+
+    .banners__banner-title {
+        font-size: 22px;
+    }
 }
 
-.section_line_available::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    margin-top: -1px;
-    width: 100vw;
-    height: 1px;
-    background: linear-gradient(90deg, rgba(229, 229, 229, 0) 2%, rgba(229, 229, 229, 1) 7%, rgba(229, 229, 229, 1) 50%, rgba(229, 229, 229, 1) 93%, rgba(229, 229, 229, 0) 98%);
+@media (max-width: 690px) {
+    .banners__left-banner-link {
+        width: 100%;
+    }
+
+    .banners__right-banner-link,
+    .banners__container::before {
+        display: none;
+    }
 
 }
-
-
 
 /* ******************BEST OFFER*********************** */
 
@@ -143,15 +169,23 @@
     font-weight: 700;
 }
 
+.best-offer__equally_mobile {
+    display: none;
+}
+
 .best-offer__result {
+    position: relative;
+    top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: flex-start;
 }
 
 .best-offer__old-price {
     position: relative;
     left: -60px;
+    margin-bottom: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
     font-weight: 400;
@@ -169,7 +203,7 @@
 }
 
 .best-offer__new-price {
-    margin-top: 25px;
+
     margin-bottom: 70px;
     font-family: 'Roboto', sans-serif;
     font-size: 34px;
@@ -178,7 +212,11 @@
 
 .best-offer__add-to-bag-button,
 .new-arrivals__all-arrivals-button {
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 75px;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -188,10 +226,112 @@
     transition-property: color, border;
 }
 
+.best-offer__add-to-bag-button_mobile {
+    display: none;
+}
+
 .best-offer__add-to-bag-button:hover,
 .new-arrivals__all-arrivals-button:hover {
     color: #f14a58;
     border-color: #f14a58;
+}
+
+@media (max-width: 940px) {
+
+    .best-offer__plus,
+    .best-offer__equally {
+        font-size: 30px;
+    }
+
+    .best-offer__result {
+        position: relative;
+        top: 140px;
+
+    }
+
+    .best-offer__old-price {
+        left: -40px;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .best-offer__old-price::before {
+        width: 90px;
+    }
+
+    .best-offer__new-price {
+
+        font-size: 30px;
+    }
+
+
+    .best-offer__add-to-bag-button_desktop {
+        display: none;
+    }
+
+    .best-offer__add-to-bag-button_mobile {
+        display: flex;
+        margin: 75px auto 0;
+    }
+}
+
+@media (max-width: 690px) {
+    .best-offer__content {
+        flex-wrap: wrap;
+    }
+
+    .best-offer__first-item-button-up,
+    .best-offer__second-item-button-up {
+        margin-bottom: 30px;
+    }
+
+    .best-offer__first-item-button-down,
+    .best-offer__second-item-button-down {
+        margin-top: 30px;
+    }
+
+    .best-offer__result {
+        top: 0;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .best-offer__old-price {
+        left: 0;
+    }
+
+    .best-offer__equally {
+        display: none;
+    }
+
+
+
+    .best-offer__new-price {
+        position: relative;
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .best-offer__equally_mobile {
+        position: absolute;
+        top: 0;
+        left: -25px;
+        display: block;
+
+    }
+
+    .best-offer__new-price,
+    .best-offer__equally_mobile,
+    .best-offer__plus {
+        font-size: 26px;
+    }
+
+    .best-offer__add-to-bag-button_mobile,
+    .new-arrivals__all-arrivals-button {
+        width: 220px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
 }
 
 
@@ -211,4 +351,20 @@
     width: 100%;
     margin-top: 100px;
     margin-bottom: 75px;
+}
+
+.new-arrivals__all-arrivals-button {
+    margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+    .new-arrivals__product-card:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 690px) {
+    .new-arrivals__product-card:nth-child(3) {
+        display: none;
+    }
 }
