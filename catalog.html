@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+
+<body>
+    <div class="header-and-navigation-container">
+        <header class="header">
+            <div class="container header__container">
+                <a href="index.html" class="header__logo">Template</a>
+                <a href="index.html" class="header__logo_mobile">TL</a>
+                <div class="header__buttons">
+                    <a href="#" class="header__sing-up">E-mail sing up</a>
+                    <a href="#" class="header__bag">
+                        <img src="img/icons/bag-icon.png" alt="bag icon" class="header__bag-icon" width="12"
+                            height="12">
+                        <div class="header__bag-title">Bag (0)</div>
+                    </a>
+                    <!-- header__mobile-menu-button_active -->
+                    <div class="header__mobile-menu-button "></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- navigation_mobile_active -->
+        <nav class="navigation section_line_available ">
+            <!-- navigation__container_mobile_active -->
+            <div class="container navigation__container ">
+                <ul class="navigation__list">
+                    <li><a href="catalog.html" class="navigation__list-item">Women</a></li>
+                    <li><a href="catalog.html" class="navigation__list-item">Men</a></li>
+                    <li><a href="catalog.html" class="navigation__list-item">Handbags</a></li>
+                    <li><a href="catalog.html" class="navigation__list-item">Accessories</a></li>
+                    <li><a href="catalog.html" class="navigation__list-item">Sale</a></li>
+                    <li><a href="catalog.html" class="navigation__list-item">New Arrivals</a></li>
+                    <li><a href="catalog.html" class="navigation__list-item">Clearance</a></li>
+                    <li><a href="catalog.html" class="navigation__list-item">Store Locator</a></li>
+                </ul>
+                <div class="navigation__search ">
+                    <!--navigation__search_mobile_active-->
+                    <input type="text" placeholder="Style Name" class="navigation__search-input ">
+                    <!--navigation__search-input_mobile_active-->
+                    <div class="navigation__search-icon"></div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="filters section_line_available">
+            <div class="container filters__container">
+                <!-- filters__item_active filters__item_checked -->
+                <div class="filters__item ">
+                    <!-- filters__item-name_checked -->
+                    <div class="filters__item-name ">Fashion</div>
+                    <!-- filters__item-value_active -->
+                    <div class="filters__item-value">Casual-style</div>
+                    <!-- filters__item-container_active -->
+                    <div class="filters__item-container ">
+                        <div class="filters__list-item">
+                            <input type="radio" name="fashion__not-selected" id="fashion__not-selected">
+                            <label for="fashion__not-selected">Not selected</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="fashion__nail-the-90s" id="fashion__nail-the-90s">
+                            <label for="fashion__nail-the-90s">Nail the 90s</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="fashion__casual-style" id="fashion__casual-style">
+                            <label for="fashion__casual-style">Casual style</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="fashion__new-look" id="fashion__new-look">
+                            <label for="fashion__new-look">New Look</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="fashion__sport" id="fashion__sport">
+                            <label for="fashion__sport">Sport</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="fashion__vintage" id="fashion__vintage">
+                            <label for="fashion__vintage">Vintage</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="fashion__classical-style" id="fashion__classical-style">
+                            <label for="fashion__classical-style">Classical style</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <select name="fashion" id="filters__fashion" class="filters__item">
+                    <option value="none" hidden="">Fashion</option>
+                    <option value="not-selected">Not selected</option>
+                    <option value="nail-the-90s">Nail the 90s</option>
+                    <option value="casual-style">Casual style</option>
+                    <option value="new-look">New Look</option>
+                    <option value="sport">Sport</option>
+                    <option value="vintage">Vintage</option>
+                    <option value="classical-style">Classical style</option>
+                </select> -->
+                <div class="filters__item ">
+                    <!-- filters__item-name_checked -->
+                    <div class="filters__item-name ">Product type</div>
+                    <!-- filters__item-value_active -->
+                    <div class="filters__item-value"></div>
+                    <!-- filters__item-container_active -->
+                    <div class="filters__item-container ">
+                        <div class="filters__list-item">
+                            <input type="radio" name="product-type__not-selected" id="product-type__not-selected">
+                            <label for="product-type__not-selected">Not selected</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="product-type__coats-jackets" id="product-type__coats-jackets">
+                            <label for="product-type__coats-jackets">Coats & Jackets</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="product-type__dresses" id="product-type__dresses">
+                            <label for="product-type__dresses">Dresses</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="product-type__jersey-tops" id="product-type__jersey-tops">
+                            <label for="product-type__jersey-tops">Jersey Tops</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <select name="product-type" id="filters__product-type" class="filters__item">
+                    <option value="none" hidden="">Product type</option>
+                    <option value="not-selected">Not selected</option>
+                    <option value="coats-jackets">Coats & Jackets</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="jersey-tops">Jersey Tops</option>
+                </select> -->
+                <div class="filters__item ">
+                    <!-- filters__item-name_checked -->
+                    <div class="filters__item-name ">Color</div>
+                    <!-- filters__item-value_active -->
+                    <div class="filters__item-value"></div>
+                    <!-- filters__item-container_active -->
+                    <div class="filters__item-container ">
+                        <div class="filters__list-item">
+                            <input type="radio" name="color__not-selected" id="color__not-selected">
+                            <label for="color__not-selected">Not selected</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="color__black" id="color__black">
+                            <label for="color__black">Black</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="color__blue" id="color__blue">
+                            <label for="color__blue">Blue</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="color__red" id="color__red">
+                            <label for="color__red">Red</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="color__green" id="color__green">
+                            <label for="color__green">Green</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="color__golden" id="color__golden">
+                            <label for="color__golden">Golden</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <select name="color" id="filters__color" class="filters__item">
+                    <option value="none" hidden="">Color</option>
+                    <option value="not-selected">Not selected</option>
+                    <option value="black">Black</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="golden">Golden</option>
+                </select> -->
+                <div class="filters__item ">
+                    <!-- filters__item-name_checked -->
+                    <div class="filters__item-name ">Brand</div>
+                    <!-- filters__item-value_active -->
+                    <div class="filters__item-value"></div>
+                    <!-- filters__item-container_active -->
+                    <div class="filters__item-container ">
+                        <div class="filters__list-item">
+                            <input type="radio" name="brand__not-selected" id="brand__not-selected">
+                            <label for="brand__not-selected">Not selected</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="brand__chi-chi-london" id="brand__chi-chi-london">
+                            <label for="brand__chi-chi-london">Chi Chi London</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="brand__antipodium" id="brand__antipodium">
+                            <label for="brand__antipodium">Antipodium</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="brand__adidas" id="brand__adidas">
+                            <label for="brand__adidas">Adidas</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="brand__new-balance" id="brand__new-balance">
+                            <label for="brand__new-balance">New Balance</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="brand__river-island" id="brand__river-island">
+                            <label for="brand__river-island">River Island</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <select name="brand" id="filters__brand" class="filters__item">
+                    <option value="none" hidden="">Brand</option>
+                    <option value="not-selected">Not selected</option>
+                    <option value="chi-chi-london">Chi Chi London</option>
+                    <option value="antipodium">Antipodium</option>
+                    <option value="adidas">Adidas</option>
+                    <option value="new-balance">New Balance</option>
+                    <option value="river-island">River Island</option>
+                </select> -->
+                <div class="filters__item ">
+                    <!-- filters__item-name_checked -->
+                    <div class="filters__item-name ">Size</div>
+                    <!-- filters__item-value_active -->
+                    <div class="filters__item-value"></div>
+                    <!-- filters__item-container_active -->
+                    <div class="filters__item-container ">
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__not-selected" id="size__not-selected">
+                            <label for="size__not-selected">Not selected</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__uk-2" id="size__uk-2">
+                            <label for="size__uk-2">UK 2</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__uk-18" id="size__uk-18">
+                            <label for="size__uk-18">UK 18</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__uk-18l" id="size__uk-18l">
+                            <label for="size__uk-18l">UK 18L</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__uk-20" id="size__uk-20">
+                            <label for="size__uk-20">UK 20</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__uk-20l" id="size__uk-20l">
+                            <label for="size__uk-20l">UK 20L</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__uk-20s" id="size__uk-20s">
+                            <label for="size__uk-20s">UK 20S</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__uk-22s" id="size__uk-22s">
+                            <label for="size__uk-22s">UK 22S</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="size__uk-22" id="size__uk-22">
+                            <label for="size__uk-22">UK 22</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <select name="size" id="filters__size" class="filters__item">
+                    <option value="none" hidden="">Size</option>
+                    <option value="not-selected">Not selected</option>
+                    <option value="uk-2">UK 2</option>
+                    <option value="uk-18">UK 18</option>
+                    <option value="uk-18l">UK 18L</option>
+                    <option value="uk-20">UK 20</option>
+                    <option value="uk-20l">UK 20L</option>
+                    <option value="uk-20s">UK 20S</option>
+                    <option value="uk-22s">UK 22S</option>
+                    <option value="uk-22">UK 22</option>
+                </select> -->
+                <div class="filters__item ">
+                    <!-- filters__item-name_checked -->
+                    <div class="filters__item-name ">Price range</div>
+                    <!-- filters__item-value_active -->
+                    <div class="filters__item-value"></div>
+                    <!-- filters__item-container_active -->
+                    <div class="filters__item-container ">
+                        <div class="filters__list-item">
+                            <input type="radio" name="price-range__not-selected" id="price-range__not-selected">
+                            <label for="price-range__not-selected">Not selected</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="price-range__to-99" id="price-range__to-99">
+                            <label for="price-range__to-99">To £99</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="price-range__from-100-to-299" id="price-range__from-100-to-299">
+                            <label for="price-range__from-100-to-299">£100-£299</label>
+                        </div>
+                        <div class="filters__list-item">
+                            <input type="radio" name="price-range__from-300" id="price-range__from-300">
+                            <label for="price-range__from-300">From £300</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <select name="price-range" id="filters__price-range" class="filters__item">
+                    <option value="none" hidden="">Price range</option>
+                    <option value="not-selected">Not selected</option>
+                    <option value="to-99">To £99</option>
+                    <option value="from-100-to-299">£100-£299</option>
+                    <option value="from-300">From £300</option>
+                </select> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="links-and-footer-container">
+        <section class="links section_line_available">
+            <div class="container links__container">
+                <div class="links__left-block">
+                    <div class="links__quick-links">
+                        <h4 class="links__block-title">Quick Links</h4>
+                        <ul class="links__quick-links-list links__list">
+                            <li><a href="#" class="links__quick-links-item links__list-item">Store locator</a></li>
+                            <li><a href="#" class="links__quick-links-item links__list-item">Gift cards</a></li>
+                            <li><a href="#" class="links__quick-links-item links__list-item">Size guide</a></li>
+                            <li><a href="#" class="links__quick-links-item links__list-item">About us</a></li>
+                            <li><a href="#" class="links__quick-links-item links__list-item">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="links__customer-care">
+                        <h4 class="links__block-title">Customer Care</h4>
+                        <ul class="links__customer-care-list links__list">
+                            <li><a href="#" class="links__customer-care-list-item links__list-item">Customer service</a>
+                            </li>
+                            <li><a href="#" class="links__customer-care-list-item links__list-item">Track my order</a>
+                            </li>
+                            <li><a href="#" class="links__customer-care-list-item links__list-item">Return policy</a>
+                            </li>
+                            <li><a href="#" class="links__customer-care-list-item links__list-item">Shipping &
+                                    delivery</a>
+                            </li>
+                            <li><a href="#" class="links__customer-care-list-item links__list-item">Contact us</a></li>
+                            <li><a href="#" class="links__customer-care-list-item links__list-item">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="links__right-block">
+                    <div class="links__questions-and-number">
+                        <div class="links__questions">
+                            <h4 class="links__block-title links__questions-title">Questions</h4>
+                            <a href="#" class="links__twitter-link">
+                                <img src="img/icons/twitter.svg" alt="twitter icon" class="links__twitter-link-icon">
+                                <p class="links__twitter-link-text">Tweet us <strong>@template</strong></p>
+                            </a>
+
+                        </div>
+                        <div class="links__number">
+                            <h4 class="links__block-title links__number-title">Order by phone</h4>
+                            <a href="tel:88004094712" class="links__number-link">8-800-409-47-12</a>
+                        </div>
+                    </div>
+                    <div class="links__delivery-info-and-socials">
+                        <div class="links__delivery-info">We have our own delivery service which operates in 23 major
+                            European cities. Delivery time - 3-5 days.</div>
+                        <div class="footer__links_mobile">
+                            <ul class="footer__links-list">
+                                <li><a href="#" class="footer__list-item">Legal notice</a></li>
+                                <li><a href="#" class="footer__list-item">Privacy policy</a></li>
+                                <li><a href="#" class="footer__list-item">Site map</a></li>
+                            </ul>
+                        </div>
+                        <div class="links__socials">
+                            <a href="#" class="links__socials-fb"><img src="img/icons/fb.svg" alt="facebook icon"></a>
+                            <a href="#" class="links__socials-twitter"><img src="img/icons/twitter-2.svg"
+                                    alt="twitter icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__info">© 2010–2015, The Template Group inc.</div>
+                <div class="footer__share">
+                    <div class="footer__share-title">Share</div>
+                    <div class="footer__share-value">1 437</div>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__links-list">
+                        <li><a href="#" class="footer__list-item">Legal notice</a></li>
+                        <li><a href="#" class="footer__list-item">Privacy policy</a></li>
+                        <li><a href="#" class="footer__list-item">Site map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let menu = document.querySelector('.header__mobile-menu-button');
+        let navContainer = document.querySelector('.navigation__container');
+        let navBlock = document.querySelector('.navigation');
+
+        let searchIcon = document.querySelector('.navigation__search-icon');
+        let searchBlock = document.querySelector('.navigation__search');
+        let searchInput = document.querySelector('.navigation__search-input');
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('header__mobile-menu-button_active');
+            navContainer.classList.toggle('navigation__container_mobile_active');
+            navBlock.classList.toggle('navigation_mobile_active');
+        })
+
+        searchIcon.addEventListener('click', function () {
+            searchInput.classList.toggle('navigation__search-input_mobile_active');
+            searchBlock.classList.toggle('navigation__search_mobile_active');
+        })
+
+        let filtersBlock = document.querySelector('.filters__container');
+        let filterBlocks = document.querySelectorAll('.filters__item');
+
+        filtersBlock.addEventListener('click', function (e) {
+            let filterBlock = e.target;
+            if (filterBlock.classList.contains('filters__item')) {
+                filterBlock.querySelector('.filters__item-container').classList.toggle(
+                    'filters__item-container_active');
+                filterBlock.classList.toggle('filters__item_active');
+            }
+        })
+
+        // filterContainer.addEventListener('click', function (e) {
+        //     if (e.target.classList.contains('filters__list-item')) {
+        //         filterBlock.querySelector('.filters__item-container').classList.toggle(
+        //             'filters__item-container_active');
+        //         filterBlock.classList.toggle('filters__item_active');
+        //     }
+        // })
+
+
+        // let filterContainers = document.querySelectorAll('.filters__item-container');
+        // for (let i = 0; i < filterContainers.length; i++) {
+        //     filterContainers[i].addEventListener('click', function (el) {
+        //         let radioItem = el.target;
+        //         if (radioItem.classList.contains('filters__list-item')) {
+        //             for (let j = 0; j < filterBlocks.length; j++) {
+        //                 filterBlocks[j].querySelector('.filters__item-container').classList.remove(
+        //                     'filters__item-container_active');
+        //             }
+        //         }
+        //     })
+        // }
+
+
+        // let activeFilter = document.querySelector('.filters__item-container_active');
+        // activeFilter.addEventListener('click', function (el) {
+        //     let radioItem = el.target;
+        //     if (radioItem.classList.contains('filters__list-item')) {
+        //         for (let i = 0; i < filterBlocks.length; i++) {
+        //             filterBlocks[i].querySelector('.filters__item-container').classList.remove(
+        //                 'filters__item-container_active');
+        //         }
+        //     }
+        // })
+    </script>
+
+</body>
+
+</html>

@@ -3,6 +3,10 @@
 
 html,
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -366,15 +370,18 @@ body {
         font-size: 12px;
     }
 
+
     .navigation__search-input {
+        position: absolute;
+        right: 0;
         width: 0;
         transition: 0.3s;
         transition-property: width;
     }
 
     .navigation__search-input_mobile_active {
-        position: absolute;
-        right: 0;
+        /* position: absolute; */
+        /* right: 0; */
         width: 250px;
     }
 
