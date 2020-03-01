@@ -83,7 +83,7 @@
     background-color: #f7f7f7;
 }
 
-.filters__list-item {
+.filters__list-item label {
     display: block;
     padding: 10px 0 10px 20px;
     cursor: pointer;
