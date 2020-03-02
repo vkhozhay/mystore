@@ -219,8 +219,8 @@ body {
 
 .header__mobile-menu-button {
     display: none;
-    width: 14px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     margin-left: 40px;
     background-image: url('../img/icons/menu-icon.svg');
     background-size: cover;
@@ -682,7 +682,7 @@ body {
         top: 100%;
         left: -20px;
         margin-top: -1px;
-        width: 375px;
+        width: 100vw;
         height: 1px;
         background: rgba(229, 229, 229);
 
@@ -701,7 +701,7 @@ body {
         top: 100%;
         left: -20px;
         margin-top: -1px;
-        width: 375px;
+        width: 100vw;
         height: 1px;
         background: rgba(229, 229, 229);
 
