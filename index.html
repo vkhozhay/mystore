@@ -34,14 +34,14 @@
             <!-- navigation__container_mobile_active -->
             <div class="container navigation__container ">
                 <ul class="navigation__list">
-                    <li><a href="catalog.html" class="navigation__list-item">Women</a></li>
-                    <li><a href="catalog.html" class="navigation__list-item">Men</a></li>
-                    <li><a href="catalog.html" class="navigation__list-item">Handbags</a></li>
-                    <li><a href="catalog.html" class="navigation__list-item">Accessories</a></li>
-                    <li><a href="catalog.html" class="navigation__list-item">Sale</a></li>
-                    <li><a href="catalog.html" class="navigation__list-item">New Arrivals</a></li>
-                    <li><a href="catalog.html" class="navigation__list-item">Clearance</a></li>
-                    <li><a href="catalog.html" class="navigation__list-item">Store Locator</a></li>
+                    <li class="nav-li"><a href="catalog.html" class="navigation__list-item">Women</a></li>
+                    <li class="nav-li"><a href="catalog.html" class="navigation__list-item">Men</a></li>
+                    <li class="nav-li"><a href="catalog.html" class="navigation__list-item">Handbags</a></li>
+                    <li class="nav-li"><a href="catalog.html" class="navigation__list-item">Accessories</a></li>
+                    <li class="nav-li"><a href="catalog.html" class="navigation__list-item">Sale</a></li>
+                    <li class="nav-li"><a href="catalog.html" class="navigation__list-item">New Arrivals</a></li>
+                    <li class="nav-li"><a href="catalog.html" class="navigation__list-item">Clearance</a></li>
+                    <li class="nav-li"><a href="catalog.html" class="navigation__list-item">Store Locator</a></li>
                 </ul>
                 <div class="navigation__search ">
                     <!--navigation__search_mobile_active-->
@@ -224,25 +224,8 @@
         </footer>
     </div>
 
-    <script>
-        let menu = document.querySelector('.header__mobile-menu-button');
-        let navContainer = document.querySelector('.navigation__container');
-        let navBlock = document.querySelector('.navigation');
+    <script src="js/common.js"></script>
 
-        let searchIcon = document.querySelector('.navigation__search-icon');
-        let searchBlock = document.querySelector('.navigation__search');
-        let searchInput = document.querySelector('.navigation__search-input');
-        menu.addEventListener('click', function () {
-            menu.classList.toggle('header__mobile-menu-button_active');
-            navContainer.classList.toggle('navigation__container_mobile_active');
-            navBlock.classList.toggle('navigation_mobile_active');
-        })
-
-        searchIcon.addEventListener('click', function () {
-            searchInput.classList.toggle('navigation__search-input_mobile_active');
-            searchBlock.classList.toggle('navigation__search_mobile_active');
-        })
-    </script>
 </body>
 
 </html>
