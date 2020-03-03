@@ -40,22 +40,27 @@ showFilterButton.addEventListener('click', function () {
 
 var filterNames = document.querySelectorAll('.filters__mobile-head-item');
 
-var filterLabels = mobileFilterContainer.querySelectorAll('.label');
-
 mobileFilterContainer.addEventListener('click', function (e) {
     if (e.target.classList.contains('label')) {
+        var currentFilterNumber = void 0,
+            currentFilterName = void 0,
+            currentFilterValue = void 0;
         for (var i = 0; i < filterNames.length; i++) {
-            // let radioBtns = filterContainers[i].querySelectorAll('input');
-            var radioLabels = filterContainers[i].querySelectorAll('label');
+            var radioLabels = filterContainers[i].querySelectorAll('.label');
             for (var j = 0; j < radioLabels.length; j++) {
-                if (e.target.innerHTML === radioLabels[j].innerHTML && e.target.innerHTML !== 'Not selected') {
-                    filterNames[i].innerHTML = radioLabels[j].innerHTML;
-                    filterNames[i].classList.add('filters__mobile-head-item_checked');
-                } else if (e.target.innerHTML === 'Not selected') {
-                    filterNames[i].innerHTML = filterContainers[i].parentNode.querySelector('.filters__item-name').innerHTML;
-                    filterNames[i].classList.remove('filters__mobile-head-item_checked');
+                if (e.target === radioLabels[j]) {
+                    currentFilterName = filterBlocks[i].querySelector('.filters__item-name').innerHTML;
+                    currentFilterNumber = i;
+                    currentFilterValue = radioLabels[j].innerHTML;
                 }
             }
+        }
+        if (currentFilterValue !== 'Not selected') {
+            filterNames[currentFilterNumber].innerHTML = currentFilterValue;
+            filterNames[currentFilterNumber].classList.add('filters__mobile-head-item_checked');
+        } else {
+            filterNames[currentFilterNumber].innerHTML = currentFilterName;
+            filterNames[currentFilterNumber].classList.remove('filters__mobile-head-item_checked');
         }
     }
 });

@@ -210,31 +210,12 @@
     font-weight: 700;
 }
 
-.best-offer__add-to-bag-button,
-.new-arrivals__all-arrivals-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 340px;
-    height: 75px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    border: 1px solid #e5e5e5;
-    cursor: pointer;
-    transition: 0.2s;
-    transition-property: color, border;
-}
 
 .best-offer__add-to-bag-button_mobile {
     display: none;
 }
 
-.best-offer__add-to-bag-button:hover,
-.new-arrivals__all-arrivals-button:hover {
-    color: #f14a58;
-    border-color: #f14a58;
-}
+
 
 @media (max-width: 940px) {
 

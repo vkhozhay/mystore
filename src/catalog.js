@@ -41,23 +41,25 @@ showFilterButton.addEventListener('click', function () {
 
 let filterNames = document.querySelectorAll('.filters__mobile-head-item');
 
-let filterLabels = mobileFilterContainer.querySelectorAll('.label')
-
-
 mobileFilterContainer.addEventListener('click', function (e) {
     if (e.target.classList.contains('label')) {
+        let currentFilterNumber, currentFilterName, currentFilterValue;
         for (let i = 0; i < filterNames.length; i++) {
-            // let radioBtns = filterContainers[i].querySelectorAll('input');
-            let radioLabels = filterContainers[i].querySelectorAll('label');
+            let radioLabels = filterContainers[i].querySelectorAll('.label');
             for (let j = 0; j < radioLabels.length; j++) {
-                if (e.target.innerHTML === radioLabels[j].innerHTML && e.target.innerHTML !== 'Not selected') {
-                    filterNames[i].innerHTML = radioLabels[j].innerHTML;
-                    filterNames[i].classList.add('filters__mobile-head-item_checked');
-                } else if (e.target.innerHTML === 'Not selected') {
-                    filterNames[i].innerHTML = filterContainers[i].parentNode.querySelector('.filters__item-name').innerHTML;
-                    filterNames[i].classList.remove('filters__mobile-head-item_checked')
+                if (e.target === radioLabels[j]) {
+                    currentFilterName = filterBlocks[i].querySelector('.filters__item-name').innerHTML;
+                    currentFilterNumber = i;
+                    currentFilterValue = radioLabels[j].innerHTML;
                 }
             }
+        }
+        if (currentFilterValue !== 'Not selected') {
+            filterNames[currentFilterNumber].innerHTML = currentFilterValue;
+            filterNames[currentFilterNumber].classList.add('filters__mobile-head-item_checked');
+        } else {
+            filterNames[currentFilterNumber].innerHTML = currentFilterName;
+            filterNames[currentFilterNumber].classList.remove('filters__mobile-head-item_checked')
         }
     }
 })
