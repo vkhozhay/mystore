@@ -1,0 +1,254 @@
+.back-to-catalog__container {
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.back-to-catalog__btn {
+    position: relative;
+    display: block;
+    padding-left: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.back-to-catalog__btn::before {
+    content: '<';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.item__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.item__photos,
+.item__discription {
+    width: 48%;
+}
+
+.item__photos {
+    display: flex;
+    flex-direction: column;
+}
+
+.item__main-photo {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.item__main-photo img {
+    height: auto;
+    width: 100%;
+}
+
+.item__photo-gallery {
+    position: relative;
+    display: flex;
+    width: 100%
+}
+
+.item__photo-galery-item {
+    position: relative;
+    flex: 1;
+    max-height: 150px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.item__photo-galery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.item__photo-galery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.item__photo-galery-item:hover::before,
+.item__photo-galery-item_active::before {
+    display: block;
+}
+
+
+
+.item__discription-name {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.item__discription-text {
+    margin-bottom: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.item__discription-price {
+    margin-bottom: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.item__discription-size,
+.item__discription-color {
+    display: flex;
+    align-items: center;
+}
+
+.item__discription-size {
+    margin-bottom: 20px;
+}
+
+.item__discription-color {
+    margin-bottom: 70px;
+}
+
+.item__discription-size-title,
+.item__discription-color-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.item__discription-size-title {
+    margin-right: 46px;
+}
+
+.item__discription-color-title {
+    margin-right: 40px;
+}
+
+.item__label {
+    display: block;
+    margin-left: 25px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.item__discription-size-item input[type="radio"],
+.item__discription-color-item input[type="radio"] {
+    display: none;
+}
+
+
+.item__discription-size-item input[type="radio"]:checked+.item__label,
+.item__discription-color-item input[type="radio"]:checked+.item__label {
+    border: 1px solid #e5e5e5;
+}
+
+
+@media (max-width: 1024px) {
+    .item__container {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .item__photos,
+    .item__discription {
+        width: 100%;
+    }
+
+    .item__photos {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .item__main-photo {
+        flex: 3;
+    }
+
+    .item__photo-gallery {
+        flex-direction: column;
+        flex: 1;
+    }
+
+
+    .item__discription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item__discription-name {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .item__discription-text {
+        order: 1;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .item__discription-price {
+        order: 0;
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    .item__discription-size {
+        order: 2;
+    }
+
+    .item__discription-color {
+        order: 3;
+    }
+
+    .item__discription-btn {
+        order: 4;
+    }
+}
+
+@media (max-width: 768px) {
+    .item__photos {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .item__photo-gallery {
+        flex-direction: row;
+    }
+
+    .item__discription-size,
+    .item__discription-color {
+        align-self: flex-start;
+    }
+
+    .item__label {
+        padding: 15px 20px;
+        margin-right: 20px;
+    }
+
+    .item__discription-size-title {
+        margin-right: 30px;
+    }
+
+    .item__discription-color-title {
+        margin-right: 24px;
+    }
+}

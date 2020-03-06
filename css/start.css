@@ -160,6 +160,19 @@
     transform: rotate(180deg);
 }
 
+.best-offer__product-card {
+    display: none;
+}
+
+.best-offer__product-card .product-card__img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.best-offer__product-card_active {
+    display: block;
+}
+
 .best-offer__plus,
 .best-offer__equally {
     position: relative;
@@ -196,7 +209,8 @@
     content: '';
     position: absolute;
     top: 50%;
-    width: 100px;
+    left: 0;
+    width: 120%;
     height: 1px;
     background-color: #f14a58;
     transform: rotate(-30deg);
@@ -309,9 +323,7 @@
 
     .best-offer__add-to-bag-button_mobile,
     .new-arrivals__all-arrivals-button {
-        width: 220px;
         margin-top: 30px;
-        font-size: 20px;
     }
 }
 
@@ -338,7 +350,7 @@
     margin-top: 0;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .new-arrivals__product-card:last-child {
         display: none;
     }
@@ -348,4 +360,4 @@
     .new-arrivals__product-card:nth-child(3) {
         display: none;
     }
-}
+} */

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start</title>
+    <title>Shopping Bag</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/shopping-bag.css">
 </head>
 
 <body>
@@ -53,110 +53,43 @@
         </nav>
     </div>
 
-    <section class="banners section_line_available">
-        <div class="container banners__container ">
-            <a href="item.html" class="banners__left-banner-link">
-                <div class="banners__left-banner">
-                    <div class="banners__banner-discription">
-                        <h3 class="banners__banner-title">Nike Red</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="catalog.html" class="banners__right-banner-link">
-                <div class="banners__right-banner">
-                    <div class="banners__banner-discription">
-                        <h3 class="banners__banner-title">Caps & Hats</h3>
-                        <p class="banners__banner-subtitle">Sale -50%</p>
-                    </div>
-                </div>
-            </a>
+    <div class="page-title section_line_available">
+        <div class="container page-title__container">
+            <h2 class="page-title__title">Shopping bag</h2>
+        </div>
+    </div>
+
+
+    <section class="bag-items section_line_available">
+        <div class="container bag-items__container">
+
+
+
+
         </div>
     </section>
 
-    <section class="best-offer section_line_available">
-        <div class="container best-offer__container">
-            <h2 class="section-title best-offer__title">Best offer</h2>
-            <p class="section-subtitle best-offer__subtitle">This offer is valid in-store and online. Prices displayed
-                reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2019</p>
-            <div class="best-offer__content">
-                <div class="best-offer__first-item">
-                    <div class="best-offer__first-item-button-up"></div>
-                    <!-- <div class="best-offer__product-card product-card product-card_new">
-                        <a href="#">
-                            <div class="product-card__img-container"><img src="img/products/4.jpg" alt="product img"
-                                    class="product-card__img">
-                            </div>
-                            <h5 class="product-card__title">Turtle Neck Jumper in Rib</h5>
-                        </a>
-                        <p class="product-card__price">£130.25</p>
-                    </div> -->
-                    <div class="best-offer__first-item-button-down"></div>
+    <div class="message">
+        <div class="container message__container">
+            <div class="message__text">You've qualified for Free UK Next Day Delivery on your order. Don't forget to
+                enter the code <p class="message__text_red">nexday</p> at checkout</div>
+        </div>
+    </div>
+
+    <section class="checkout section_line_available">
+        <div class="container checkout__container">
+            <div class="checkout__empty-bag-btn">Empty bag</div>
+            <div class="checkout__checkout-btn big-button">Checkout</div>
+            <div class="checkout__price">
+                <div class="checkout__total-price">Total price: <div class="checkout__total-price-value">£236.50</div>
                 </div>
-                <div class="best-offer__plus">+</div>
-                <div class="best-offer__second-item">
-                    <div class="best-offer__second-item-button-up"></div>
-                    <!-- <div class="best-offer__product-card product-card">
-                        <img src="img/products/2.jpg" alt="product img" class="product-card__img">
-                        <h5 class="product-card__title">Levi’s Jeans for women</h5>
-                        <p class="product-card__price">£95.50</p>
-                    </div> -->
-                    <div class="best-offer__second-item-button-down"></div>
-                </div>
-                <div class="best-offer__equally">=</div>
-                <div class="best-offer__result">
-                    <div class="best-offer__old-price"></div>
-                    <div class="best-offer__new-price">
-                        <div class="best-offer__equally best-offer__equally_mobile">=</div>
-                        <div class="best-offer__new-price-value"></div>
-                    </div>
-                    <a href="shopping-bag.html">
-                        <div class="best-offer__add-to-bag-button best-offer__add-to-bag-button_desktop big-button">Add
-                            to
-                            bag</div>
-                    </a>
+                <!-- checkout__discount_active -->
+                <div class="checkout__discount ">Applied discount: <div class="checkout__discount-value">£15.00</div>
                 </div>
             </div>
-            <a href="shopping-bag.html">
-                <div class="best-offer__add-to-bag-button best-offer__add-to-bag-button_mobile big-button">Add to bag
-                </div>
-            </a>
         </div>
     </section>
 
-    <section class="new-arrivals section_line_available">
-        <div class="container new-arrivals__container">
-            <h2 class="section-title new-arrivals__title">New arrivals</h2>
-            <div class="new-arrivals__content">
-                <!-- <div class="new-arrivals__product-card product-card product-card_new">
-                    <a href="#">
-                        <div class="product-card__img-container"><img src="img/products/4.jpg" alt="product img"
-                                class="product-card__img">
-                        </div>
-                        <h5 class="product-card__title">Turtle Neck Jumper in Rib</h5>
-                    </a>
-                    <p class="product-card__price">£130.25</p>
-                </div>
-                <div class="new-arrivals__product-card product-card product-card_new">
-                    <img src="img/products/3.jpg" alt="product img" class="product-card__img">
-                    <h5 class="product-card__title">Neck Knitted Jumper</h5>
-                    <p class="product-card__price">£76.25</p>
-                </div>
-                <div class="new-arrivals__product-card product-card">
-                    <img src="img/products/4.jpg" alt="product img" class="product-card__img">
-                    <h5 class="product-card__title">Turtle Neck Jumper in Rib</h5>
-                    <p class="product-card__price">£130.25</p>
-                </div>
-                <div class="new-arrivals__product-card product-card">
-                    <img src="img/products/5.jpg" alt="product img" class="product-card__img">
-                    <h5 class="product-card__title">With Patchwork Crochet</h5>
-                    <p class="product-card__price">£80.60</p>
-                </div> -->
-            </div>
-            <a href="catalog.html">
-                <div class="new-arrivals__all-arrivals-button big-button">All arrivals</div>
-            </a>
-        </div>
-    </section>
 
     <div class="links-and-footer-container">
         <section class="links section_line_available">
@@ -242,11 +175,9 @@
         </footer>
     </div>
 
-    <script src="js/lodash.js"></script>
-    <script src="js/data/catalog.js"></script>
-    <script src="js/data/best-offer.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/start.js"></script>
+    <script src="js/shopping-bag.js"></script>
+
 </body>
 
 </html>

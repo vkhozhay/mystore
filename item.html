@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start</title>
+    <title>Item</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/item.css">
 </head>
 
 <body>
@@ -53,110 +53,82 @@
         </nav>
     </div>
 
-    <section class="banners section_line_available">
-        <div class="container banners__container ">
-            <a href="item.html" class="banners__left-banner-link">
-                <div class="banners__left-banner">
-                    <div class="banners__banner-discription">
-                        <h3 class="banners__banner-title">Nike Red</h3>
+    <div class="back-to-catalog section_line_available">
+        <div class="container back-to-catalog__container">
+            <a href="catalog.html" class="back-to-catalog__btn">Back to catalog</a>
+        </div>
+    </div>
+
+
+    <section class="item">
+        <div class="container item__container">
+            <div class="item__photos">
+                <div class="item__main-photo"><img src="img/item/1.jpg" alt="item photo"></div>
+                <div class="item__photo-gallery">
+                    <!-- item__photo-galery-item_active -->
+                    <div class="item__photo-galery-item item__photo-galery-item_active"><img src="img/item/1.jpg"
+                            alt="item photo"></div>
+                    <div class="item__photo-galery-item"><img src="img/item/2.jpg" alt="item photo"></div>
+                    <div class="item__photo-galery-item"><img src="img/item/3.jpg" alt="item photo"></div>
+                </div>
+            </div>
+            <div class="item__discription">
+                <h2 class="item__discription-name">Dark classic fit suit</h2>
+                <div class="item__discription-text">Featuring fine Italian wool, this elegant suit has pick-stitch
+                    edging, cascade buttons at the cuffs and a subtle stripe pattern throughout. </div>
+                <div class="item__discription-price">£180.60</div>
+                <div class="item__discription-size">
+                    <div class="item__discription-size-title">Size:</div>
+                    <div class="item__discription-size-item"><input type="radio" name="size" id="uk-52"><label
+                            class="item__label" for="uk-52">UK 52</label></div>
+                    <div class="item__discription-size-item"><input type="radio" name="size" id="uk-54"><label
+                            class="item__label" for="uk-54">UK 54</label></div>
+                    <div class="item__discription-size-item"><input type="radio" name="size" id="uk-56"><label
+                            class="item__label" for="uk-56">UK 56</label></div>
+                </div>
+                <div class="item__discription-color">
+                    <div class="item__discription-color-title">Color:</div>
+                    <div class="item__discription-color-item"><input type="radio" name="color" id="black"><label
+                            class="item__label" for="black">Black</label></div>
+                    <div class="item__discription-color-item"><input type="radio" name="color" id="blue"><label
+                            class="item__label" for="blue">Blue</label></div>
+                </div>
+                <div class="item__discription-btn big-button">Add to bag</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bottom-banners section_line_available">
+        <div class="container bottom-banners__container">
+            <a href="#" class="bottom-banners__left-link">
+                <div class="bottom-banners__left bottom-banners__item">
+                    <div class="bottom-banners__discription">
+                        <h3 class="bottom-banners__title">Adidas Blue</h3>
+                        <p class="bottom-banners__subtitle">For men</p>
                     </div>
                 </div>
             </a>
-            <a href="catalog.html" class="banners__right-banner-link">
-                <div class="banners__right-banner">
-                    <div class="banners__banner-discription">
-                        <h3 class="banners__banner-title">Caps & Hats</h3>
-                        <p class="banners__banner-subtitle">Sale -50%</p>
+            <a href="#" class="bottom-banners__center-link">
+                <div class="bottom-banners__center bottom-banners__item">
+                    <div class="bottom-banners__discription">
+                        <h3 class="bottom-banners__title">Repair Patches</h3>
+                        <p class="bottom-banners__subtitle">£ 150.50</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="bottom-banners__right-link">
+                <div class="bottom-banners__right bottom-banners__item">
+                    <div class="bottom-banners__discription">
+                        <h3 class="bottom-banners__title">Sale</h3>
+                        <p class="bottom-banners__subtitle">-70%</p>
                     </div>
                 </div>
             </a>
         </div>
     </section>
 
-    <section class="best-offer section_line_available">
-        <div class="container best-offer__container">
-            <h2 class="section-title best-offer__title">Best offer</h2>
-            <p class="section-subtitle best-offer__subtitle">This offer is valid in-store and online. Prices displayed
-                reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2019</p>
-            <div class="best-offer__content">
-                <div class="best-offer__first-item">
-                    <div class="best-offer__first-item-button-up"></div>
-                    <!-- <div class="best-offer__product-card product-card product-card_new">
-                        <a href="#">
-                            <div class="product-card__img-container"><img src="img/products/4.jpg" alt="product img"
-                                    class="product-card__img">
-                            </div>
-                            <h5 class="product-card__title">Turtle Neck Jumper in Rib</h5>
-                        </a>
-                        <p class="product-card__price">£130.25</p>
-                    </div> -->
-                    <div class="best-offer__first-item-button-down"></div>
-                </div>
-                <div class="best-offer__plus">+</div>
-                <div class="best-offer__second-item">
-                    <div class="best-offer__second-item-button-up"></div>
-                    <!-- <div class="best-offer__product-card product-card">
-                        <img src="img/products/2.jpg" alt="product img" class="product-card__img">
-                        <h5 class="product-card__title">Levi’s Jeans for women</h5>
-                        <p class="product-card__price">£95.50</p>
-                    </div> -->
-                    <div class="best-offer__second-item-button-down"></div>
-                </div>
-                <div class="best-offer__equally">=</div>
-                <div class="best-offer__result">
-                    <div class="best-offer__old-price"></div>
-                    <div class="best-offer__new-price">
-                        <div class="best-offer__equally best-offer__equally_mobile">=</div>
-                        <div class="best-offer__new-price-value"></div>
-                    </div>
-                    <a href="shopping-bag.html">
-                        <div class="best-offer__add-to-bag-button best-offer__add-to-bag-button_desktop big-button">Add
-                            to
-                            bag</div>
-                    </a>
-                </div>
-            </div>
-            <a href="shopping-bag.html">
-                <div class="best-offer__add-to-bag-button best-offer__add-to-bag-button_mobile big-button">Add to bag
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <section class="new-arrivals section_line_available">
-        <div class="container new-arrivals__container">
-            <h2 class="section-title new-arrivals__title">New arrivals</h2>
-            <div class="new-arrivals__content">
-                <!-- <div class="new-arrivals__product-card product-card product-card_new">
-                    <a href="#">
-                        <div class="product-card__img-container"><img src="img/products/4.jpg" alt="product img"
-                                class="product-card__img">
-                        </div>
-                        <h5 class="product-card__title">Turtle Neck Jumper in Rib</h5>
-                    </a>
-                    <p class="product-card__price">£130.25</p>
-                </div>
-                <div class="new-arrivals__product-card product-card product-card_new">
-                    <img src="img/products/3.jpg" alt="product img" class="product-card__img">
-                    <h5 class="product-card__title">Neck Knitted Jumper</h5>
-                    <p class="product-card__price">£76.25</p>
-                </div>
-                <div class="new-arrivals__product-card product-card">
-                    <img src="img/products/4.jpg" alt="product img" class="product-card__img">
-                    <h5 class="product-card__title">Turtle Neck Jumper in Rib</h5>
-                    <p class="product-card__price">£130.25</p>
-                </div>
-                <div class="new-arrivals__product-card product-card">
-                    <img src="img/products/5.jpg" alt="product img" class="product-card__img">
-                    <h5 class="product-card__title">With Patchwork Crochet</h5>
-                    <p class="product-card__price">£80.60</p>
-                </div> -->
-            </div>
-            <a href="catalog.html">
-                <div class="new-arrivals__all-arrivals-button big-button">All arrivals</div>
-            </a>
-        </div>
-    </section>
 
     <div class="links-and-footer-container">
         <section class="links section_line_available">
@@ -242,11 +214,11 @@
         </footer>
     </div>
 
+
     <script src="js/lodash.js"></script>
     <script src="js/data/catalog.js"></script>
-    <script src="js/data/best-offer.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/start.js"></script>
+    <script src="js/item.js"></script>
 </body>
 
 </html>

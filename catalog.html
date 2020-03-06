@@ -17,7 +17,7 @@
                 <a href="index.html" class="header__logo_mobile">TL</a>
                 <div class="header__buttons">
                     <a href="#" class="header__sing-up">E-mail sing up</a>
-                    <a href="#" class="header__bag">
+                    <a href="shopping-bag.html" class="header__bag">
                         <img src="img/icons/bag-icon.png" alt="bag icon" class="header__bag-icon" width="12"
                             height="12">
                         <div class="header__bag-title">Bag (0)</div>
@@ -327,8 +327,9 @@
 
     <section class="new-arrivals">
         <div class="container new-arrivals__container">
-            <div class="new-arrivals__content">
-                <div class="new-arrivals__product-card product-card product-card_new">
+
+            <!-- <div class="catalog__row">
+                <div class="catalog__product-card product-card product-card_new">
                     <a href="#">
                         <div class="product-card__img-container"><img src="img/products/1.jpg" alt="product img"
                                 class="product-card__img">
@@ -338,7 +339,7 @@
                     </a>
                     <p class="product-card__price">£65.50</p>
                 </div>
-                <div class="new-arrivals__product-card product-card product-card_new">
+                <div class="catalog__product-card product-card product-card_new">
                     <a href="#">
                         <div class="product-card__img-container"><img src="img/products/3.jpg" alt="product img"
                                 class="product-card__img">
@@ -347,7 +348,7 @@
                     </a>
                     <p class="product-card__price">£76.25</p>
                 </div>
-                <div class="new-arrivals__product-card product-card">
+                <div class="catalog__product-card product-card">
                     <a href="#">
                         <div class="product-card__img-container"><img src="img/products/4.jpg" alt="product img"
                                 class="product-card__img">
@@ -356,20 +357,19 @@
                     </a>
                     <p class="product-card__price">£130.25</p>
                 </div>
-                <div class="new-arrivals__product-card product-card">
+                <div class="catalog__product-card product-card">
                     <a href="#">
                         <div class="product-card__img-container"><img src="img/products/5.jpg" alt="product img"
                                 class="product-card__img"></div>
                         <h5 class="product-card__title">With Patchwork Crochet</h5>
                     </a>
                     <p class="product-card__price">£80.60</p>
-                </div>
-            </div>
+                </div> -->
         </div>
     </section>
 
     <div class="sale-message">
-        <div class="conatiner sale-message__container">
+        <div class="container sale-message__container">
             <h2 class="section-title sale-message__title">
                 Last weekend <p class="sale-message__title_red">extra 50%</p> off on all reduced boots and shoulder bags
             </h2>
@@ -380,7 +380,8 @@
 
     <section class="catalog section_line_available">
         <div class="container catalog__container">
-            <div class="catalog__row">
+            <div class="catalog__content">
+                <!-- <div class="catalog__row">
                 <div class="catalog__product-card product-card product-card_new">
                     <a href="#">
                         <div class="product-card__img-container"><img src="img/products/1.jpg" alt="product img"
@@ -456,8 +457,8 @@
                     </a>
                     <p class="product-card__price">£80.60</p>
                 </div>
+            </div> -->
             </div>
-
             <div class="catalog__show-more-btn big-button">Show more</div>
         </div>
     </section>
@@ -576,6 +577,9 @@
         </footer>
     </div>
 
+
+    <script src="js/lodash.js"></script>
+    <script src="js/data/catalog.js"></script>
     <script src="js/common.js"></script>
     <script src="js/catalog.js"></script>
 
